@@ -1,0 +1,240 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(to right, #7CCD7C, #4CAF50); /* 明るい緑に変更 */
+    color: white;
+    text-align: left;
+    padding: 1em;
+    height: 250px;
+    display: flex;
+    align-items: flex-start; /* 左端に寄せる */
+    flex-direction: column;
+}
+
+
+.logo-container {
+  
+    margin-top: -21rem;
+    margin-left: 65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 画面の高さいっぱいに広がるように */
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.logo-slides {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo-slide {
+    margin-right: 20px;
+    display: none; /* すべての画像を非表示に */
+}
+
+.logo-slide:first-child {
+    display: block; /* 最初の画像を表示 */
+}
+
+.logo-slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+header img {
+    border-radius: 5px;
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    color: rgb(93, 90, 90);
+    margin: 0;
+}
+
+header p {
+    text-align: right;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.header-info {
+    position: absolute;
+    right: 2em;
+    text-align: right;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.purchase-section {
+    margin-left: 35rem;
+    margin-top: -10rem;
+    text-align: center; /* テキストを中央に寄せる */
+}
+
+.purchase-section h1 {
+    margin-bottom: 2rem;
+}
+
+.purchase-button {
+   padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-section {
+    margin-top: -1.5rem;
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(205, 205, 205, 0.3);
+}
+
+.overlay {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(93, 90, 90);
+}
+
+.overlay h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main2-section {
+    margin-bottom: -2rem;
+    margin-top: -1.9rem;
+    display: flex;
+}
+
+.image2-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image2-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 15px 15px 10px rgba(13, 13, 13, 13);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 166%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(93, 90, 90);
+}
+
+.overlay2 h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: #4b5564;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #4b5564;
+    background: linear-gradient(to right, #98FB98, #00FA9A);
+  }
+  
+  .footer__navi-heading {
+    font-weight: 600;
+  }
+  
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__navi li {
+    margin-bottom: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    .md-flex {
+      display: flex;
+    }
+  
+    .md-justify-between {
+      justify-content: space-between;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
